@@ -22,4 +22,8 @@ selectedRecipe: Recipe
     )
   }
 
+  onAddToShoppingList(){
+    this.recipesService.addIngredientsToShoppingList(this.selectedRecipe.ingredients)
+  }
+
 }
