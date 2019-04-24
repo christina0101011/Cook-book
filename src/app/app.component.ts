@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cook-book';
+  currentNav = 'recipes'
+
+  onNavigate(nav: string){
+    this.currentNav = nav
+    // console.log(777777,  this.currentNav)
+  }
 }
