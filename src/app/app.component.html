@@ -2,5 +2,6 @@
 </router-outlet>
 <app-header (navSelected)="onNavigate($event)">
 </app-header>
-<app-recipes *ngIf="currentNav === 'recipes'"></app-recipes>
-<app-shopping-list *ngIf="currentNav === 'shopping-list'"></app-shopping-list>
+<!-- <app-recipes *ngIf="currentNav === 'recipes'"></app-recipes>
+<app-shopping-list *ngIf="currentNav === 'shopping-list'"></app-shopping-list> -->
+<router-outlet></router-outlet>
